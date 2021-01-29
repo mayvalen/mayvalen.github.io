@@ -41,10 +41,14 @@ thead {
   background-color: #77DD77;
   color: #fff;
 }
-tfoot {
-    background-color: #FFC0CB;
+
+td.left {
+  background-color: #fadadd;
 }
 
+td.right {
+  background-color: #FEFEFA;
+}
 
 
 /*tbody {
