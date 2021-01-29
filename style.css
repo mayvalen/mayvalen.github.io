@@ -1,0 +1,102 @@
+/* CSS files add styling rules to your content */
+html {
+  background: #f2f7f2;
+  opacity: .85; 
+}
+
+
+body {
+  font-family: 'Courier New', monospace;
+  color:#77DD77;
+  margin: 2em;
+}
+
+
+h3 {
+  font-style: regular;
+}
+
+
+blockquote {
+  display: block;
+  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 575px;
+}
+
+/*table style*/
+.mytable {
+  position: relative;
+  left: 180px;
+  top: 20px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+td {
+    border: 1px solid #77DD77;
+    display: table-cell;
+    vertical-align: inherit;
+}
+thead {
+  background-color: #77DD77;
+  color: #fff;
+}
+tfoot {
+    background-color: #FFC0CB;
+}
+tbody {
+  background-color: #FFFAF0;
+}
+
+/*list position*/
+.lastlist {
+  position: relative;
+  left: 200px;
+  top: 40px;
+}
+
+/*link style*/
+ a:link {
+  color: #77DD77;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: 	#FFC0CB;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #00FF00;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.image {
+  display: block;
+  position: relative;
+  left: 250px;
+  top: 100px;
+  float: left;
+}
+
+
+.wraptext {
+  position: relative;
+  left: 250px;
+  top: 100px;
+  width: 500px;
+  padding-bottom: 50px;
+}
+
