@@ -1,105 +1,42 @@
 /* CSS files add styling rules to your content */
-html {
-  background: rgb(152,251,152, 0.3);
-}
-
 
 body {
-  font-family: 'Courier New', monospace;
-  color:#77DD77;
+  font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  color: red;
 }
 
-
-h3 {
-  font-style: regular;
+h1 {
+  font-style: bold;
+  color: red;
 }
 
-.firstimage {
-  display: flex;
+.center {
+  text-align:center;
 }
 
-/*table style*/
-.mytable {
-  position: relative;
-  left: 180px;
-  top: 20px;
-}
-
-
-table {
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
-}
-td {
-    border: 1px solid #77DD77;
-    display: table-cell;
-    vertical-align: inherit;
-}
-thead {
-  background-color: #77DD77;
-  color: #fff;
-}
-
-td.left {
-  background-color: #fadadd;
-}
-
-td.right {
-  background-color: #FEFEFA;
-}
-
-
-/*tbody {
-  background-color: #FFFAF0;
-}
-*/
-
-/*list position*/
-.lastlist {
-  position: relative;
-  left: 200px;
-  top: 40px;
-}
-
-/*link style*/
  a:link {
-  color: #77DD77;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
+
 a:visited {
-  color: green;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
+
 a:hover {
-  color:  #FFC0CB;
+  color: red;
   background-color: transparent;
   text-decoration: underline;
 }
+
 a:active {
   color: #00FF00;
   background-color: transparent;
   text-decoration: underline;
-}
-
-
-.image {
-  display: block;
-  position: relative;
-  left: 200px;
-  top: 100px;
-  float: left;
-}
-
-
-.wraptext {
-  position: relative;
-  left: 200px;
-  top: 100px;
-  width: 500px;
-  padding-bottom: 50px;
+ 
 }
 
