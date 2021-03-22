@@ -1,43 +1,366 @@
 /* CSS files add styling rules to your content */
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('MonumentExtended-Regular.woff2') format('woff2'),
+      url('MonumentExtended-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Migra';
+  src: url('Migra-Extralight.woff2') format('woff2'),
+      url('Migra-Extralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Migra';
+  src: url('MigraItalic-ExtralightItalic.woff2') format('woff2'),
+      url('MigraItalic-ExtralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+.crosshair {cursor: crosshair;}
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Monument Extended';
   margin: 2em;
-  color: red;
-  background-color: pink;
+  color: rgb(1, 131, 1);
+  background-color: rgb(241, 241, 241);
 }
 
-h1 {
-  font-style: bold;
-  color: red;
+/*TEXT ANIMATION FROM JUSTINS DEMO*/
+
+.fancy {
+  color: rgb(1, 131, 1);
+  display: inline-block;
+  
+  transform: rotate(5deg) translate(0px, -10px);
+  animation: bounce 0.3s ease-in-out infinite alternate;
+ 
+
+  /*
+  animation-name: ;
+  animation-duration: ;
+  animation-timing-function:
+  animation-iteration-count: ;
+  animation-direction: ;
+  */
 }
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+.fancy .letter {
+  will-change: transform;
+  color:rgb(1, 131, 1);
+  display: inline-block;
+  animation: bounce .4s ease-in-out infinite alternate;
+}
+
+.fancy .letter:nth-child(4n + 1) {
+  animation-delay: 0s;
+}
+.fancy .letter:nth-child(4n + 2) {
+  animation-delay: .2s;
+}
+.fancy .letter:nth-child(4n + 3) {
+  animation-delay: .4s;
+}
+.fancy .letter:nth-child(4n + 4) {
+  animation-delay: .6s;
+}
+
+
+
+
+/*IMAGES*/
+
+.image {
+  margin: auto;
+  position: absolute;
+  padding-left: 330px;
+  padding-top: 150px;
+}
+
+.image1 {
+  display: none;
+}
+.image2 {
+  display: none;
+}
+.image3 {
+  display: none;
+}
+.image4 {
+  display: none;
+}
+.image5 {
+  display: none;
+}
+.image6 {
+  display: none;
+}
+.image7 {
+  display: none;
+}
+.image8 {
+  display: none;
+}
+.image9 {
+  display: none;
+}
+
+
+
+
+
+
+
 
 .center {
   text-align:center;
 }
 
  a:link {
-  color: red;
+  color: rgb(1, 131, 1);
   background-color: transparent;
   text-decoration: none;
+  cursor: cell;
 }
 
 a:visited {
-  color: black;
+  color: rgb(1, 131, 1);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: #ff8fbe;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
-  color: #00FF00;
+  color: #ff4693;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
  
 }
 
+/*FLEXBOX*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: auto;
+  padding-top: 1em;
+  position: absolute;
+}
+
+.box {
+  width: 450px;
+}
+
+.box1 {
+  padding-bottom: 3em;
+}
+
+.box2 {
+  padding-bottom: 3em;
+}
+
+.box3 {
+  padding-bottom: 3em;
+}
+
+.box4 {
+  padding-bottom: .8em;
+}
+
+.box5 {
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+  padding-bottom: .8em;
+}
+
+.box6 {
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+  padding-bottom: .8em;
+}
+
+.box7 {
+  padding-bottom: .8em;
+}
+
+.box8 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box9 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box10 {
+  padding-bottom: .8em;
+}
+
+.box11 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box12 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box13 {
+  padding-bottom: .8em;
+}
+
+.box14 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box15 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box16 {
+  padding-bottom: .8em;
+}
+
+.box17 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box18 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box19 {
+  padding-bottom: .8em;
+}
+
+.box20 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box21 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box22 {
+  padding-bottom: .8em;
+}
+
+.box23 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box24 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box25 {
+  padding-bottom: .8em;
+}
+
+.box26 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box27 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box28 {
+  padding-bottom: .8em;
+}
+
+.box29 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box30 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
+
+ .box31 {
+  padding-bottom: .8em;
+}
+
+.box32 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+ .box33 {
+  padding-bottom: .8em;
+  font-family: 'Migra';
+  font-style: italic;
+  font-size: 1.3em;
+ }
